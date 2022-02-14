@@ -8,6 +8,7 @@
             <Label Text="Página 01"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Abrir menu" Clicked="AbrirMenu"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
