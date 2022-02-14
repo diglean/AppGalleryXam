@@ -16,6 +16,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="XamarinForms\Paginas\PaginaDeCarrossel\Carrossel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Paginas\PaginaDeCarrossel\Conteudo01.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Paginas\PaginaDeCarrossel\Conteudo02.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Paginas\PaginaDeCarrossel\Conteudo03.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="XamarinForms\Paginas\Modal\Conteudo01.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
