@@ -71,7 +71,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\home.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AppGallery\AppGallery.csproj">
       <Project>{2A1B149B-0A29-42ED-9B52-1BC70A1D9C3A}</Project>

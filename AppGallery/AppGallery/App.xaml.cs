@@ -25,7 +25,10 @@ namespace AppGallery
             //pagina.CurrentPage = pagina.Children[1];
             //MainPage = pagina;
             #endregion
-            MainPage = new XamarinForms.PaginaDeCarrossel.Carrossel();
+            #region TabbedPages
+            MainPage = new XamarinForms.Paginas.PaginaDeAbas.Abas();
+            #endregion
+
         }
 
         protected override void OnStart()
