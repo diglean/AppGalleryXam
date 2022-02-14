@@ -35,7 +35,7 @@ namespace AppGallery
             #region TabbedPages
             //MainPage = new XamarinForms.Paginas.PaginaDeAbas.Abas();
             #endregion
-            MainPage = new XamarinForms.Paginas.PaginaDeMenuLateral.MenuLateral();
+            MainPage = new AppBase.Menu();
 
         }
 
