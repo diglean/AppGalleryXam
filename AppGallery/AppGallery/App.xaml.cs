@@ -25,9 +25,17 @@ namespace AppGallery
             //pagina.CurrentPage = pagina.Children[1];
             //MainPage = pagina;
             #endregion
-            #region TabbedPages
-            MainPage = new XamarinForms.Paginas.PaginaDeAbas.Abas();
+            #region MasterDetailPage
+            //var pagina = new MasterDetailPage();
+            ////Menu
+            //pagina.Master = ;
+            ////Conteúdo
+            //pagina.Detail = ;
             #endregion
+            #region TabbedPages
+            //MainPage = new XamarinForms.Paginas.PaginaDeAbas.Abas();
+            #endregion
+            MainPage = new XamarinForms.Paginas.PaginaDeMenuLateral.MenuLateral();
 
         }
 
