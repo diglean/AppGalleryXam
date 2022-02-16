@@ -31,6 +31,9 @@
     <EmbeddedResource Update="XamarinForms\Layouts\PilhaLayout\Pilha.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="XamarinForms\Layouts\RelativeLayouts\Relative.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="XamarinForms\Paginas\PaginaDeAbas\Abas.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
