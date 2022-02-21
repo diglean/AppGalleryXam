@@ -3,36 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGallery.XamarinForms.Layouts.BarraDeRolagemLayout.BarraDeRolagem">
     <ContentPage.Content>
-        <ScrollView x:Name="BarraDeRolage">
-
-        <StackLayout Margin="20">
-                <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
-                    <StackLayout Orientation="Horizontal">
-                    <BoxView BackgroundColor="Red"/>
-                    <BoxView BackgroundColor="Orange"/>
-                    <BoxView BackgroundColor="Yellow"/>
-                    <BoxView BackgroundColor="Green"/>
-                    <BoxView BackgroundColor="Blue"/>
-                    <BoxView BackgroundColor="Purple"/>
-                        <BoxView BackgroundColor="Pink"/>
-                        <BoxView BackgroundColor="Red"/>
-                    <BoxView BackgroundColor="Orange"/>
-                    <BoxView BackgroundColor="Yellow"/>
-                    <BoxView BackgroundColor="Green"/>
-                    <BoxView BackgroundColor="Blue"/>
-                    <BoxView BackgroundColor="Purple"/>
-                        <BoxView BackgroundColor="Pink"/>
-                        <BoxView BackgroundColor="Red"/>
-                    <BoxView BackgroundColor="Orange"/>
-                    <BoxView BackgroundColor="Yellow"/>
-                    <BoxView BackgroundColor="Green"/>
-                    <BoxView BackgroundColor="Blue"/>
-                    <BoxView BackgroundColor="Purple"/>
-                        <BoxView BackgroundColor="Pink"/>
-                    </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ScrollView Orientation="Both" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Scrolled="ScrollView_Scrolled">
+                <StackLayout Padding="10">
+                    <BoxView Color="Black" HeightRequest="500" WidthRequest="500"/>
+                    <Label x:Name="posicao" Text="ScrollView 01" BackgroundColor="Black" TextColor="White"/>
+                </StackLayout>
             </ScrollView>
-        <Button Text="Clique me!" BackgroundColor="Black" TextColor="White" Clicked="RolarParaSegundaLabel"/>
-                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at enim porttitor, tincidunt libero non, imperdiet mauris. Etiam auctor est et malesuada consequat. Cras ultricies sagittis nisi eget feugiat. Sed id diam elementum, iaculis sem in, consequat quam. Nunc quis augue eget nunc dictum tempus. Nulla vulputate libero pharetra nibh condimentum semper quis mattis justo. Integer iaculis viverra leo, nec mollis nisi suscipit non.
+                    <ScrollView x:Name="BarraDeRolage" Grid.Row="1">
+
+                        <StackLayout Margin="20">
+                            <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                                <StackLayout Orientation="Horizontal">
+                                    <BoxView BackgroundColor="Red"/>
+                                    <BoxView BackgroundColor="Orange"/>
+                                    <BoxView BackgroundColor="Yellow"/>
+                                    <BoxView BackgroundColor="Green"/>
+                                    <BoxView BackgroundColor="Blue"/>
+                                    <BoxView BackgroundColor="Purple"/>
+                                    <BoxView BackgroundColor="Pink"/>
+                                    <BoxView BackgroundColor="Red"/>
+                                    <BoxView BackgroundColor="Orange"/>
+                                    <BoxView BackgroundColor="Yellow"/>
+                                    <BoxView BackgroundColor="Green"/>
+                                    <BoxView BackgroundColor="Blue"/>
+                                    <BoxView BackgroundColor="Purple"/>
+                                    <BoxView BackgroundColor="Pink"/>
+                                    <BoxView BackgroundColor="Red"/>
+                                    <BoxView BackgroundColor="Orange"/>
+                                    <BoxView BackgroundColor="Yellow"/>
+                                    <BoxView BackgroundColor="Green"/>
+                                    <BoxView BackgroundColor="Blue"/>
+                                    <BoxView BackgroundColor="Purple"/>
+                                    <BoxView BackgroundColor="Pink"/>
+                                </StackLayout>
+                            </ScrollView>
+                            <Button Text="Clique me!" BackgroundColor="Black" TextColor="White" Clicked="RolarParaSegundaLabel"/>
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at enim porttitor, tincidunt libero non, imperdiet mauris. Etiam auctor est et malesuada consequat. Cras ultricies sagittis nisi eget feugiat. Sed id diam elementum, iaculis sem in, consequat quam. Nunc quis augue eget nunc dictum tempus. Nulla vulputate libero pharetra nibh condimentum semper quis mattis justo. Integer iaculis viverra leo, nec mollis nisi suscipit non.
 
 Nulla feugiat odio erat, sit amet rhoncus magna volutpat at. Mauris ut velit eu turpis vestibulum vulputate. In suscipit, risus quis porta ultrices, nulla nisl tempor turpis, in porttitor eros felis eget odio. Proin semper convallis orci, ut malesuada justo vestibulum non. Donec varius, nibh nec luctus bibendum, ante quam malesuada erat, eget interdum mauris lacus nec ex. Nam egestas luctus convallis. Pellentesque accumsan enim mi, vehicula elementum ante tempor non. Curabitur dapibus justo nisi. Nunc at mi diam. Mauris feugiat sed augue ut mollis. Aliquam erat volutpat. Morbi eget sodales ipsum, et accumsan lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
@@ -41,7 +55,7 @@ Maecenas congue iaculis libero vel condimentum. Pellentesque eu pretium felis. P
 Ut vitae efficitur lectus, a gravida dui. Duis id dapibus orci, sed placerat purus. Aliquam egestas blandit lectus, vitae placerat mi facilisis a. Duis semper enim a placerat auctor. Phasellus commodo quis turpis mattis mollis. Sed ac sollicitudin orci, in tempor ligula. In vestibulum tortor sed urna elementum, sed pharetra odio ornare. Aenean suscipit justo ex. Mauris laoreet elementum feugiat. Curabitur mattis sit amet massa a feugiat.
 
 Aenean in luctus ante, nec interdum nisi. Aliquam eget erat in mi vestibulum tristique nec sit amet erat. Etiam consequat maximus velit, sit amet sodales neque. Suspendisse in scelerisque eros. Maecenas in commodo eros, sit amet fringilla justo. Praesent a est massa. Nunc leo velit, molestie ac dolor eget, pellentesque rutrum mauris. Aenean sed accumsan mi, eget rhoncus libero. Suspendisse eget neque lectus." BackgroundColor="Black" TextColor="White"/>
-            <Label x:Name="SegundaLabel" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at enim porttitor, tincidunt libero non, imperdiet mauris. Etiam auctor est et malesuada consequat. Cras ultricies sagittis nisi eget feugiat. Sed id diam elementum, iaculis sem in, consequat quam. Nunc quis augue eget nunc dictum tempus. Nulla vulputate libero pharetra nibh condimentum semper quis mattis justo. Integer iaculis viverra leo, nec mollis nisi suscipit non.
+                            <Label x:Name="SegundaLabel" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at enim porttitor, tincidunt libero non, imperdiet mauris. Etiam auctor est et malesuada consequat. Cras ultricies sagittis nisi eget feugiat. Sed id diam elementum, iaculis sem in, consequat quam. Nunc quis augue eget nunc dictum tempus. Nulla vulputate libero pharetra nibh condimentum semper quis mattis justo. Integer iaculis viverra leo, nec mollis nisi suscipit non.
 
 Nulla feugiat odio erat, sit amet rhoncus magna volutpat at. Mauris ut velit eu turpis vestibulum vulputate. In suscipit, risus quis porta ultrices, nulla nisl tempor turpis, in porttitor eros felis eget odio. Proin semper convallis orci, ut malesuada justo vestibulum non. Donec varius, nibh nec luctus bibendum, ante quam malesuada erat, eget interdum mauris lacus nec ex. Nam egestas luctus convallis. Pellentesque accumsan enim mi, vehicula elementum ante tempor non. Curabitur dapibus justo nisi. Nunc at mi diam. Mauris feugiat sed augue ut mollis. Aliquam erat volutpat. Morbi eget sodales ipsum, et accumsan lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
 
@@ -50,7 +64,10 @@ Maecenas congue iaculis libero vel condimentum. Pellentesque eu pretium felis. P
 Ut vitae efficitur lectus, a gravida dui. Duis id dapibus orci, sed placerat purus. Aliquam egestas blandit lectus, vitae placerat mi facilisis a. Duis semper enim a placerat auctor. Phasellus commodo quis turpis mattis mollis. Sed ac sollicitudin orci, in tempor ligula. In vestibulum tortor sed urna elementum, sed pharetra odio ornare. Aenean suscipit justo ex. Mauris laoreet elementum feugiat. Curabitur mattis sit amet massa a feugiat.
 
 Aenean in luctus ante, nec interdum nisi. Aliquam eget erat in mi vestibulum tristique nec sit amet erat. Etiam consequat maximus velit, sit amet sodales neque. Suspendisse in scelerisque eros. Maecenas in commodo eros, sit amet fringilla justo. Praesent a est massa. Nunc leo velit, molestie ac dolor eget, pellentesque rutrum mauris. Aenean sed accumsan mi, eget rhoncus libero. Suspendisse eget neque lectus." BackgroundColor="Black" TextColor="White"/>
-        </StackLayout>
-        </ScrollView>
+                        </StackLayout>
+                    </ScrollView>
+        </Grid>
+            
+        
     </ContentPage.Content>
 </ContentPage>
