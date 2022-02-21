@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Layouts.FlexLayout.Flex">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column">
+            <FlexLayout BackgroundColor="#FFC5C5" Direction="Column" AlignItems="Stretch" JustifyContent="SpaceAround">
+                <Label Text="Linha 01" FlexLayout.Order="1" FlexLayout.AlignSelf="Center" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Linha 02" FlexLayout.Order="0" FlexLayout.Basis="30%" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Linha 03" FlexLayout.Order="1" BackgroundColor="Black" TextColor="White" Padding="10"/>
+            </FlexLayout>
+            <FlexLayout BackgroundColor="#8FD1FF" FlexLayout.Grow="1" Direction="Row" AlignItems="Start">
+                <Label Text="Coluna 01" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Coluna 02" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Coluna 03" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Coluna 04" BackgroundColor="Black" TextColor="White" Padding="10"/>
+                <Label Text="Coluna 05" BackgroundColor="Black" TextColor="White" Padding="10"/>
+            </FlexLayout>
+        </FlexLayout>
+
+    </ContentPage.Content>
+</ContentPage>

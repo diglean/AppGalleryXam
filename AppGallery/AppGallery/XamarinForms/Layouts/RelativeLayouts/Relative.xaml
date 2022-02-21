@@ -18,10 +18,25 @@
                      RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=-50}"
                      />
 
-            <BoxView BackgroundColor="Green" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, 
-                ElementName=Quadrado, Property=Width, Factor=0.5}"/>
-            <BoxView BackgroundColor="Green" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, 
-                ElementName=Quadrado, Property=Height, Factor=0.5}"
+            <BoxView BackgroundColor="Purple" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Width, Factor=0.5}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Height, Factor=0.5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=X, Constant=-25}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Y, Constant=-25}"
+                     />
+            <BoxView BackgroundColor="Purple" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Width, Factor=0.5}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Height, Factor=0.5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=X, Constant=75}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Y, Constant=-25}"
+                     />
+            <BoxView BackgroundColor="Red" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Width, Factor=0.15}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Height, Factor=0.15}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=X, Constant=40}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Y, Constant=40}"
+                     />
+            <BoxView BackgroundColor="Green" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Width, Factor=0.75}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Height, Factor=0.07}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=X, Constant=12.5}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Quadrado, Property=Y, Constant=75}"
                      />
         </RelativeLayout>
     </ContentPage.Content>
