@@ -4,8 +4,34 @@
              x:Class="AppGallery.XamarinForms.Layouts.BarraDeRolagemLayout.BarraDeRolagem">
     <ContentPage.Content>
         <ScrollView x:Name="BarraDeRolage">
+
         <StackLayout Margin="20">
-                <Button Text="Clique me!" BackgroundColor="Black" TextColor="White" Clicked="RolarParaSegundaLabel"/>
+                <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal">
+                    <BoxView BackgroundColor="Red"/>
+                    <BoxView BackgroundColor="Orange"/>
+                    <BoxView BackgroundColor="Yellow"/>
+                    <BoxView BackgroundColor="Green"/>
+                    <BoxView BackgroundColor="Blue"/>
+                    <BoxView BackgroundColor="Purple"/>
+                        <BoxView BackgroundColor="Pink"/>
+                        <BoxView BackgroundColor="Red"/>
+                    <BoxView BackgroundColor="Orange"/>
+                    <BoxView BackgroundColor="Yellow"/>
+                    <BoxView BackgroundColor="Green"/>
+                    <BoxView BackgroundColor="Blue"/>
+                    <BoxView BackgroundColor="Purple"/>
+                        <BoxView BackgroundColor="Pink"/>
+                        <BoxView BackgroundColor="Red"/>
+                    <BoxView BackgroundColor="Orange"/>
+                    <BoxView BackgroundColor="Yellow"/>
+                    <BoxView BackgroundColor="Green"/>
+                    <BoxView BackgroundColor="Blue"/>
+                    <BoxView BackgroundColor="Purple"/>
+                        <BoxView BackgroundColor="Pink"/>
+                    </StackLayout>
+            </ScrollView>
+        <Button Text="Clique me!" BackgroundColor="Black" TextColor="White" Clicked="RolarParaSegundaLabel"/>
                 <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at enim porttitor, tincidunt libero non, imperdiet mauris. Etiam auctor est et malesuada consequat. Cras ultricies sagittis nisi eget feugiat. Sed id diam elementum, iaculis sem in, consequat quam. Nunc quis augue eget nunc dictum tempus. Nulla vulputate libero pharetra nibh condimentum semper quis mattis justo. Integer iaculis viverra leo, nec mollis nisi suscipit non.
 
 Nulla feugiat odio erat, sit amet rhoncus magna volutpat at. Mauris ut velit eu turpis vestibulum vulputate. In suscipit, risus quis porta ultrices, nulla nisl tempor turpis, in porttitor eros felis eget odio. Proin semper convallis orci, ut malesuada justo vestibulum non. Donec varius, nibh nec luctus bibendum, ante quam malesuada erat, eget interdum mauris lacus nec ex. Nam egestas luctus convallis. Pellentesque accumsan enim mi, vehicula elementum ante tempor non. Curabitur dapibus justo nisi. Nunc at mi diam. Mauris feugiat sed augue ut mollis. Aliquam erat volutpat. Morbi eget sodales ipsum, et accumsan lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
