@@ -100,5 +100,11 @@ namespace AppGallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.FrameLayout.Framee();
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void AbrirBoxView(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.BoxControl.Box();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }
