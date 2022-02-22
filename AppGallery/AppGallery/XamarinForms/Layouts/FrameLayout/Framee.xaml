@@ -3,10 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGallery.XamarinForms.Layouts.FrameLayout.Framee">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+        <StackLayout Padding="20" Spacing="40">
+            <Frame HorizontalOptions="Center" CornerRadius="100" Padding="0" IsClippedToBounds="True">
+                <BoxView BackgroundColor="Green" WidthRequest="150" HeightRequest="150"/>
+
+
+
+            </Frame>
+            
+            
+            <Frame Padding="0">
+                <StackLayout>
+                    <Label Text="James Gunn" HorizontalOptions="Center" Margin="20, 10, 20, 0" FontSize="29"/>
+                    <BoxView HeightRequest="1" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Diretor de peacemaker" Margin="20, 10, 20, 10"/>
+                </StackLayout>
+            </Frame>
+            <Frame HasShadow="True" BorderColor="#000000" CornerRadius="1000">
+                <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
