@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.LabelControl.Label">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <Label Text="FontFamily, FontSize, FontAttributes" TextColor="Black"/>
+                <Label Text="Texto 01" FontFamily="sans-serif-condensed"/>
+                <Label Text="Texto 02" />
+
+                <Label Text="HorizontalTextAlignment, VerticalTextAlignment" TextColor="Black"/>
+                <Label Text="Texto 01" HorizontalTextAlignment="Center" BackgroundColor="Black" TextColor="White" HeightRequest="60" WidthRequest="100" HorizontalOptions="Start"/>
+                <Label Text="Texto 02" VerticalTextAlignment="Center" BackgroundColor="Black" TextColor="White" HeightRequest="60" WidthRequest="100" HorizontalOptions="Start"/>
+
+                <Label Text="FormattedText" TextColor="Black"/>
+                <Label >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Texto " TextColor="Green" FontSize="30"/>
+                            <Span Text=" 01" TextColor="Red" FontSize="50"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Text="TextType" TextColor="Black"/>
+                <Label Text="Texto 01" TextDecorations="Strikethrough"/>
+                <Label TextType="Html">
+                    <![CDATA[
+                        Texto <strong><i>02</i><strong>
+                    ]]>
+                </Label>
+
+                <Label Text="TextColor" TextColor="Green"/>
+            <Label Text="Texto 01" TextColor="Blue"/>
+            <Label Text="Texto 02" TextColor="Red"/>
+            
+            <Label Text="TextDecorations" TextColor="Black"/>
+            <Label Text="Texto 01" TextDecorations="Strikethrough"/>
+            <Label Text="Texto 02" TextDecorations="Underline"/>
+
+            <Label Text="CharacterSpacing" TextColor="Black"/>
+            <Label Text="Texto 01" CharacterSpacing="10" />
+
+                <Label Text="LineHeight" TextColor="Black"/>
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Pellentesque bibendum erat sed imperdiet dapibus. 
+                   Integer aliquam dapibus ex sed dignissim. Nullam facilisis lacus dictum pharetra tristique. 
+                   Phasellus eget turpis felis. Etiam aliquam lacus ac pretium tincidunt. 
+                   Donec enim eros, tincidunt ut dui non, tempor egestas nisl. Aenean bibendum odio et risus eleifend, non tristique lacus cursus.
+                   Suspendisse quis arcu at justo convallis vestibulum. Ut in sapien iaculis, finibus orci eu, viverra orci. 
+                   Nulla lobortis, sem nec dapibus imperdiet, elit nisl lobortis enim, sed posuere nunc lacus a eros. In ut lacinia leo. 
+                   Duis id arcu augue. Sed dapibus nisi non elementum laoreet. Vivamus ultrices sapien id mollis placerat. 
+                   Pellentesque arcu quam, ullamcorper ac lectus sit amet, aliquet pretium nisl. Sed ex turpis,
+                   placerat eget lacinia sit amet, semper nec arcu."
+                       MaxLines="3"
+                       LineHeight="1.5"/>
+
+                <Label Text="Maxlines" TextColor="Black"/>
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Pellentesque bibendum erat sed imperdiet dapibus. 
+                   Integer aliquam dapibus ex sed dignissim. Nullam facilisis lacus dictum pharetra tristique. 
+                   Phasellus eget turpis felis. Etiam aliquam lacus ac pretium tincidunt. 
+                   Donec enim eros, tincidunt ut dui non, tempor egestas nisl. Aenean bibendum odio et risus eleifend, non tristique lacus cursus.
+                   Suspendisse quis arcu at justo convallis vestibulum. Ut in sapien iaculis, finibus orci eu, viverra orci. 
+                   Nulla lobortis, sem nec dapibus imperdiet, elit nisl lobortis enim, sed posuere nunc lacus a eros. In ut lacinia leo. 
+                   Duis id arcu augue. Sed dapibus nisi non elementum laoreet. Vivamus ultrices sapien id mollis placerat. 
+                   Pellentesque arcu quam, ullamcorper ac lectus sit amet, aliquet pretium nisl. Sed ex turpis,
+                   placerat eget lacinia sit amet, semper nec arcu."
+                       MaxLines="3"/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Pellentesque bibendum erat sed imperdiet dapibus. 
+                   Integer aliquam dapibus ex sed dignissim. Nullam facilisis lacus dictum pharetra tristique. 
+                   Phasellus eget turpis felis. Etiam aliquam lacus ac pretium tincidunt. 
+                   Donec enim eros, tincidunt ut dui non, tempor egestas nisl. Aenean bibendum odio et risus eleifend, non tristique lacus cursus.
+                   Suspendisse quis arcu at justo convallis vestibulum. Ut in sapien iaculis, finibus orci eu, viverra orci. 
+                   Nulla lobortis, sem nec dapibus imperdiet, elit nisl lobortis enim, sed posuere nunc lacus a eros. In ut lacinia leo. 
+                   Duis id arcu augue. Sed dapibus nisi non elementum laoreet. Vivamus ultrices sapien id mollis placerat. 
+                   Pellentesque arcu quam, ullamcorper ac lectus sit amet, aliquet pretium nisl. Sed ex turpis,
+                   placerat eget lacinia sit amet, semper nec arcu."/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Pellentesque bibendum erat sed imperdiet dapibus. 
+                   Integer aliquam dapibus ex sed dignissim. Nullam facilisis lacus dictum pharetra tristique. 
+                   Phasellus eget turpis felis. Etiam aliquam lacus ac pretium tincidunt. 
+                   Donec enim eros, tincidunt ut dui non, tempor egestas nisl. Aenean bibendum odio et risus eleifend, non tristique lacus cursus.
+                   Suspendisse quis arcu at justo convallis vestibulum. Ut in sapien iaculis, finibus orci eu, viverra orci. 
+                   Nulla lobortis, sem nec dapibus imperdiet, elit nisl lobortis enim, sed posuere nunc lacus a eros. In ut lacinia leo. 
+                   Duis id arcu augue. Sed dapibus nisi non elementum laoreet. Vivamus ultrices sapien id mollis placerat. 
+                   Pellentesque arcu quam, ullamcorper ac lectus sit amet, aliquet pretium nisl. Sed ex turpis,
+                   placerat eget lacinia sit amet, semper nec arcu."/>
+            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Pellentesque bibendum erat sed imperdiet dapibus. 
+                   Integer aliquam dapibus ex sed dignissim. Nullam facilisis lacus dictum pharetra tristique. 
+                   Phasellus eget turpis felis. Etiam aliquam lacus ac pretium tincidunt. 
+                   Donec enim eros, tincidunt ut dui non, tempor egestas nisl. Aenean bibendum odio et risus eleifend, non tristique lacus cursus.
+                   Suspendisse quis arcu at justo convallis vestibulum. Ut in sapien iaculis, finibus orci eu, viverra orci. 
+                   Nulla lobortis, sem nec dapibus imperdiet, elit nisl lobortis enim, sed posuere nunc lacus a eros. In ut lacinia leo. 
+                   Duis id arcu augue. Sed dapibus nisi non elementum laoreet. Vivamus ultrices sapien id mollis placerat. 
+                   Pellentesque arcu quam, ullamcorper ac lectus sit amet, aliquet pretium nisl. Sed ex turpis,
+                   placerat eget lacinia sit amet, semper nec arcu."/>
+
+            <!--Texto base
+            <Label Text="TextDecorations" TextColor="Black"/>
+            <Label Text="Texto 01" />
+            <Label Text="Texto 02" />
+            -->
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
