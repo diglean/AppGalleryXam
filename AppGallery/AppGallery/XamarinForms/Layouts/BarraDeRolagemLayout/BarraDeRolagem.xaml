@@ -11,7 +11,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ScrollView Orientation="Both" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never" Scrolled="ScrollView_Scrolled">
+            <ScrollView Orientation="Both" HorizontalScrollBarVisibility="Never" VerticalScrollBarVisibility="Never">
                 <StackLayout Padding="10">
                     <BoxView Color="Black" HeightRequest="500" WidthRequest="500"/>
                     <Label x:Name="posicao" Text="ScrollView 01" BackgroundColor="Black" TextColor="White"/>
