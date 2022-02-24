@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppGallery.XamarinForms.Controles.ButtonControl
+namespace AppGallery.XamarinForms.Controles.ImageButtonControl
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Buttonn : ContentPage
+    public partial class ImageButonn : ContentPage
     {
-        public Buttonn()
+        public ImageButonn()
         {
             InitializeComponent();
         }
@@ -22,14 +22,14 @@ namespace AppGallery.XamarinForms.Controles.ButtonControl
             LblClicado.Text = "Clicado!!";
         }
 
-        private void Liberado(object sender, EventArgs e)
-        {
-            LblLiberado.Text = "Liberado!!";
-        }
-
         private void Pressionado(object sender, EventArgs e)
         {
             LblPressionado.Text = "Pressionado!!";
+        }
+
+        private void Liberado(object sender, EventArgs e)
+        {
+            LblLiberado.Text = "Liberado!!";
         }
     }
 }

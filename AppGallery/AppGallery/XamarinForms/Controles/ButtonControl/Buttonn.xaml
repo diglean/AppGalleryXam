@@ -3,13 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppGallery.XamarinForms.Controles.ButtonControl.Buttonn">
     <ContentPage.Content>
-        <StackLayout Spacing="1">
-            <Button Text="Botão - 01"/>
-            <Button Text="Botão - 02"/>
-            <Button Text="Botão - 03"/>
-            <Button Text="Botão - 04"/>
-            <Button Text="Botão - 05"/>
-            <Button Text="Botão - 06"/>
+        <StackLayout Padding="10" Spacing="1">
+            <Label Text="TextColor, BackgroundColor, ConerRadius"/>
+            <Button Text="Botão - 01" TextColor="White" BackgroundColor="Black" CornerRadius="1000"/>
+            
+            <Label Text="BorderWith, BorderColor"/>
+            <Button Text="Botão - 02" BackgroundColor="White" BorderWidth="3" BorderColor="Black" CornerRadius="1000"/>
+            
+            <Label Text="FontFamily, FonteSize, FonteAttributes, Padding"/>
+            <Button Text="Botão - 03" FontFamily="sans-serif-light" FontSize="Title" FontAttributes="Italic" BackgroundColor="Black" TextColor="White" Padding="30, 5" CornerRadius="1000"/>
+            
+            <Label Text="ImageSource, ContentLayout"/>
+            <Button Text="Botão - 04" ImageSource="plane.png" ContentLayout="right, 50" HorizontalOptions="Center" FontSize="30" Padding="30, 10" CornerRadius="30" BackgroundColor="Transparent" BorderColor="Black" BorderWidth="2"/>
+
+            <Label Text="CharacterSpacing, Margin"/>
+            <Button Text="Botão - 05" BackgroundColor="CadetBlue" Margin="0, 30, 0, 1"/>
+
+            <Label Text="VisualStateManager"/>
+            <Button Text="Botão - 06">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="White"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="Gray"/>
+                                <Setter Property="BorderColor" Value="Black"/>
+                                <Setter Property="BorderWidth" Value="2"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+            </Button>
+
+            
+            <Label Text="Eventos:Pressed, Released, Clicked"/>
+            <Button Text="Botão - 07" Pressed="Pressionado" Released="Liberado" Clicked="Clicado"/>
+
+            <Label Text="-" x:Name="LblPressionado"/>
+            <Label Text="-" x:Name="LblLiberado"/>
+            <Label Text="-" x:Name="LblClicado"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

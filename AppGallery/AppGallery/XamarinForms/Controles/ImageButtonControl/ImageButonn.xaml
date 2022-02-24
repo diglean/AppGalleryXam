@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppGallery.XamarinForms.Controles.ImageButtonControl.ImageButonn">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Source, BorderWidth, BorderColor"/>
+            <ImageButton Source="plane.png" 
+                         HeightRequest="100" 
+                         WidthRequest="100" 
+                         HorizontalOptions="Center" 
+                         BackgroundColor="White" 
+                         BorderWidth="4" 
+                         BorderColor="Black" 
+                         Padding="30"
+                         CornerRadius="1000"
+                         Margin="10"
+                         />
+
+            <Label Text="Eventos: Pressed, Released, Clicked"/>
+            <ImageButton Source="plane.png" 
+                         HeightRequest="100" 
+                         WidthRequest="100" 
+                         HorizontalOptions="Center" 
+                         BackgroundColor="White" 
+                         BorderWidth="4" 
+                         BorderColor="Black" 
+                         Padding="30"
+                         CornerRadius="1000"
+                         Margin="10"
+                         
+                         Clicked="Clicado"
+                         Pressed="Pressionado"
+                         Released="Liberado"
+                         />
+
+
+            <Label Text="-" x:Name="LblPressionado"/>
+            <Label Text="-" x:Name="LblLiberado"/>
+            <Label Text="-" x:Name="LblClicado"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

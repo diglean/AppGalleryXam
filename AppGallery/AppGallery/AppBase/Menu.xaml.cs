@@ -97,25 +97,37 @@ namespace AppGallery.AppBase
 
         private void AbrirFrame(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.FrameLayout.Framee();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.FrameLayout.Framee());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void AbrirBoxView(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.BoxControl.Box();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.BoxControl.Box());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void AbrirLabel(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.LabelControl.Label();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.LabelControl.Label());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void AbrirButton(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controles.ButtonControl.Buttonn();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.ButtonControl.Buttonn());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void AbrirImageButton(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.ImageButtonControl.ImageButonn());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void AbrirImage(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controles.ImageControl.Imagee());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
     }
